@@ -20,4 +20,4 @@ This page was created by Stefan Klinkusch at Digital Career Institute in Berlin,
 
 ## Screenshot
 
-to be included
+<img src="./Screenshot.png">
