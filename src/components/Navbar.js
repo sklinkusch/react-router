@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <ul>
       <li>
-        <Link to="/">Home</Link>
+        <Link to="/home">Home</Link>
       </li>
       <li>
         <Link to="/about">About</Link>
@@ -14,7 +14,7 @@ export default function Navbar() {
         <Link to="/info">Info</Link>
       </li>
       <li>
-        <Link to="/credit">Credit</Link>
+        <Link to="/credits">Credits</Link>
       </li>
     </ul>
   )

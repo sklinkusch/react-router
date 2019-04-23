@@ -16,10 +16,11 @@ function App() {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <Navbar />
-          <Route path="/" component={Home} exact />
+          <Route path="/" exact render={() => <h1>Welcome</h1>} />
+          <Route path="/home" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/info" component={Info} />
-          <Route path="/credit" component={Credits} />
+          <Route path="/credits" component={Credits} />
         </header>
       </div>
     </BrowserRouter>
