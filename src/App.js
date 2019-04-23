@@ -7,6 +7,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import About from './components/About';
 import Info from './components/Info';
 import Credits from './components/Credits';
+import Home from './components/Home';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <Navbar />
+          <Route path="/" component={Home} exact />
           <Route path="/about" component={About} />
           <Route path="/info" component={Info} />
           <Route path="/credit" component={Credits} />
