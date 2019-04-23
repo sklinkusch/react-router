@@ -31,3 +31,20 @@
     transform: rotate(360deg);
   }
 }
+
+/* Navbar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+ul li {
+  display: inline-block;
+  padding: 20px;
+}
+ul a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
