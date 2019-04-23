@@ -8,6 +8,7 @@ import About from './components/About';
 import Info from './components/Info';
 import Credits from './components/Credits';
 import Home from './components/Home';
+import Topics from './components/Topics';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/info" component={Info} />
           <Route path="/credits" component={Credits} />
+          <Route path="/topics" component={Topics} />
         </header>
       </div>
     </BrowserRouter>
