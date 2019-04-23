@@ -14,6 +14,9 @@ This page was created by Stefan Klinkusch at Digital Career Institute in Berlin,
 - import `Route` in `App.js`
 - import all components in `App.js` using `<Route>` tags
 - make a splash screen using `<Route render={() => <h1>Welcome</h1>}>`
+- add a new Component `<Topics>`, link it in `Navbar.js`, and use it
+- make a second navbar in `Topics.js`, use `{match}` in `<Link>`, `<Route>`, and the `Topic` function
+- `{match}` is used in class components as `{this.props.match}`
 
 ## Screenshot
 
