@@ -17,6 +17,9 @@ This page was created by Stefan Klinkusch at Digital Career Institute in Berlin,
 - add a new Component `<Topics>`, link it in `Navbar.js`, and use it
 - make a second navbar in `Topics.js`, use `{match}` in `<Link>`, `<Route>`, and the `Topic` function
 - `{match}` is used in class components as `{this.props.match}`
+- make a page for pages that are not found using the `<Switch>` statement
+- transform `<Link>` to `<NavLink>`
+- highlight the active `<NavLink>` using the `activeClassName` argument
 
 ## Screenshot
 
