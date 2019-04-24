@@ -1,25 +1,22 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import "../styles/Navbar.css";
+import { linkSync } from 'fs';
+
+const links = [
+  { url: "/home", name: "Home" },
+  { url: "/about", name: "About" },
+  { url: "/info", name: "Info" },
+  { url: "/credits", name: "Credits" },
+  { url: "/topics", name: "Topics" }
+];
 
 export default function Navbar() {
   return (
     <ul>
-      <li>
-        <NavLink activeClassName="selected" to="/home">Home</NavLink>
-      </li>
-      <li>
-        <NavLink activeClassName="selected" to="/about">About</NavLink>
-      </li>
-      <li>
-        <NavLink activeClassName="selected" to="/info">Info</NavLink>
-      </li>
-      <li>
-        <NavLink activeClassName="selected" to="/credits">Credits</NavLink>
-      </li>
-      <li>
-        <NavLink activeClassName="selected" to="/topics">Topics</NavLink>
-      </li>
+      {links.map(link => {
+        return (<li><NavLink activeClassName="selected" to={link.url}>{link.name}</NavLink></li>);
+      })}
     </ul>
   )
 }
